@@ -1,0 +1,290 @@
+{
+    "modules": {
+        "tag": {
+            "get-all": {
+                "success": "Successfully retrieved the list of tags",
+                "error": "Failed to retrieve the list of tags"
+            },
+            "get-detail": {
+                "success": "Successfully retrieved tag details",
+                "error": "Failed to retrieve tag details"
+            },
+            "create": {
+                "success": "Tag created successfully",
+                "error": "Failed to create tag"
+            },
+            "update": {
+                "success": "Tag updated successfully",
+                "error": "Failed to update tag"
+            },
+            "delete": {
+                "success": "Tag deleted successfully",
+                "error": "Failed to delete tag"
+            },
+            "exist": {
+                "found": "Tag already exists",
+                "not-found": "Tag does not exist"
+            },
+            "child-tag": {
+                "get-all": {
+                    "success": "Successfully retrieved the list of child tags",
+                    "error": "Failed to retrieve the list of child tags"
+                },
+                "get-detail": {
+                    "success": "Successfully retrieved child tag details",
+                    "error": "Failed to retrieve child tag details"
+                },
+                "create": {
+                    "success": "Child tag created successfully",
+                    "error": "Failed to create child tag"
+                },
+                "update": {
+                    "success": "Child tag updated successfully",
+                    "error": "Failed to update child tag"
+                },
+                "delete": {
+                    "success": "Child tag deleted successfully",
+                    "error": "Failed to delete child tag"
+                },
+                "exist": {
+                    "found": "Child tag already exists",
+                    "not-found": "Child tag does not exist"
+                }
+            }
+        },
+        "auth": {
+            "register": {
+                "create": {
+                    "success": "Account registered successfully",
+                    "error": "Failed to register account",
+                    "email-exist": "Registration failed, email already exists"
+                }
+            }
+        },
+        "mail": {
+            "send-register-email": {
+                "success": "Registration email sent successfully",
+                "error": "Failed to send registration email",
+                "exist": "Email already exists"
+            },
+            "send-reset-password-email": {
+                "success": "Password reset email sent successfully",
+                "error": "Failed to send password reset email"
+            }
+        },
+        "user": {
+            "create": {
+                "handle": {
+                    "success": "User created successfully",
+                    "error": "Failed to create user",
+                    "email-exist": "Email already exists"
+                }
+            },
+            "get-all": {
+                "success": "Successfully retrieved the list of users",
+                "error": "Failed to retrieve the list of users",
+                "not-found": "User not found"
+            },
+            "delete": {
+                "handle": {
+                    "success": "User deleted successfully",
+                    "error": "Failed to delete user",
+                    "not-found": "User not found"
+                }
+            },
+            "set-info": {
+                "success": "User information updated successfully",
+                "error": "Failed to update user information"
+            },
+            "get": {
+                "list-friends": {
+                    "success": "Successfully retrieved the list of friends",
+                    "error": "Failed to retrieve the list of friends",
+                    "not-found": "Friends not found"
+                },
+                "recommend-friends": {
+                    "success": "Successfully retrieved recommended friends",
+                    "error": "Failed to retrieve recommended friends",
+                    "not-found": "Recommended friends not found"
+                }
+            },
+            "friend-requests": {
+                "create": {
+                    "send": {
+                        "success": "Friend request sent successfully",
+                        "error": "Failed to send friend request"
+                    }
+                },
+                "get": {
+                    "all": {
+                        "success": "Successfully retrieved all friend requests",
+                        "error": "Failed to retrieve all friend requests"
+                    }
+                },
+                "update": {
+                    "feedback": {
+                        "success": "Friend request responded to successfully",
+                        "error": "Failed to respond to friend request"
+                    },
+                    "cancel": {
+                        "success": "Friend request canceled successfully",
+                        "error": "Failed to cancel friend request"
+                    }
+                }
+            }
+        },
+        "role": {
+            "get-all": {
+                "success": "Successfully retrieved the list of roles",
+                "error": "Failed to retrieve the list of roles",
+                "not-found": "Role not found"
+            }
+        },
+        "post": {
+            "comments": {
+                "create": {
+                    "handle": {
+                        "success": "Comment created successfully",
+                        "error": "Failed to create comment"
+                    }
+                },
+                "get": {
+                    "all": {
+                        "success": "Successfully retrieved all comments",
+                        "error": "Failed to retrieve all comments",
+                        "not-found": "Comment not found"
+                    },
+                    "reply": {
+                        "success": "Successfully retrieved all reply comments",
+                        "error": "Failed to retrieve all reply comments",
+                        "not-found": "Reply comment not found"
+                    }
+                },
+                "delete": {
+                    "handle": {
+                        "success": "Comment deleted successfully",
+                        "error": "Failed to delete comment"
+                    }
+                }
+            },
+            "update": {
+                "reaction": {
+                    "success": "Reaction updated successfully",
+                    "error": "Failed to update reaction"
+                }
+            }
+        },
+        "s3": {
+            "upload-limit-exceeded": "You have exceeded the allowed storage limit",
+            "only-accept-image": "Only images are allowed to be uploaded",
+            "only-accept-video": "Only videos are allowed to be uploaded"
+        },
+        "chat": {
+            "group-conversations": {
+                "create": {
+                    "handle": {
+                        "success": "Group conversation processed successfully",
+                        "error": "Failed to process group conversation"
+                    }
+                },
+                "get-all": {
+                    "success": "Successfully retrieved the list of group conversations",
+                    "error": "Failed to retrieve the list of group conversations"
+                },
+                "update": {
+                    "join": {
+                        "success": "Successfully joined group conversation",
+                        "error": "Failed to join group conversation"
+                    },
+                    "read-new-messages": {
+                        "success": "New messages marked as read successfully",
+                        "error": "Failed to mark new messages as read"
+                    },
+                    "leave": {
+                        "success": "Successfully left group conversation",
+                        "error": "Failed to leave group conversation"
+                    },
+                    "permissions": {
+                        "success": "User permissions in group updated successfully",
+                        "error": "Failed to update user permissions in group"
+                    },
+                    "info": {
+                        "success": "Group information updated successfully",
+                        "error": "Failed to update group information"
+                    }
+                },
+                "get-by-id": {
+                    "success": "Successfully retrieved group conversation information",
+                    "error": "Failed to retrieve group conversation information"
+                },
+                "get": {
+                    "all": {
+                        "success": "Successfully retrieved all group chats",
+                        "error": "Failed to retrieve all group chats"
+                    },
+                    "detail": {
+                        "success": "Successfully retrieved group conversation details",
+                        "error": "Failed to retrieve group conversation details"
+                    }
+                }
+            },
+            "group-messages": {
+                "send": {
+                    "success": "Group message sent successfully",
+                    "error": "Failed to send group message"
+                },
+                "get-all": {
+                    "success": "Successfully retrieved the list of group messages",
+                    "error": "Failed to retrieve the list of group messages"
+                },
+                "read-by-user": {
+                    "success": "Message marked as read successfully",
+                    "error": "Failed to mark message as read"
+                },
+                "delete": {
+                    "success": "Group message deleted successfully",
+                    "error": "Failed to delete group message"
+                }
+            },
+            "group-join-requests": {
+                "create": {
+                    "join": {
+                        "success": "Join request sent successfully",
+                        "error": "Failed to send join request"
+                    }
+                },
+                "update": {
+                    "feedback": {
+                        "success": "Join request responded to successfully",
+                        "error": "Failed to respond to join request"
+                    }
+                },
+                "get": {
+                    "all": {
+                        "success": "Successfully retrieved all join requests",
+                        "error": "Failed to retrieve all join requests"
+                    }
+                }
+            }
+        }
+    },
+    "validation": {
+        "missing-parameter": "Missing parameters %s",
+        "invalid-parameter": "Parameter %s is invalid"
+    },
+    "server": {
+        "error": "An error occurred. Please try again later.",
+        "unauthorized": "Access denied",
+        "forbidden": "No access to resource",
+        "not-found": "Resource not found",
+        "bad-request": "Invalid request",
+        "internal-server-error": "Internal server error",
+        "service-unavailable": "Service unavailable",
+        "gateway-timeout": "Gateway timeout",
+        "unsupported-media-type": "Unsupported media type",
+        "unprocessable-entity": "Entity cannot be processed",
+        "method-not-allowed": "Method not allowed",
+        "precondition-failed": "Precondition failed",
+        "request-timeout": "Request timed out"
+    }
+}

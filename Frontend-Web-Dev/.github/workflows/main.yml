@@ -1,0 +1,33 @@
+name: Next Deployment
+
+on:
+  push:
+    branches: [production]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: 22
+        script: |
+          cd /root/web/WEB-NEWS
+          git fetch origin
+          git checkout production
+          git pull
+          docker compose down || true
+          docker compose up -d --build
+
+
+
+
+# which docker
+#/usr/bin/docker
+#root@vpssieutoc:/usr/local/bin# sudo ln -s /usr/bin/docker /usr/local/bin/docker
+#root@vpssieutoc:/usr/local/bin# ls
+#docker

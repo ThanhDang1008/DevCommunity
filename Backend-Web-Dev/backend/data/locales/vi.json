@@ -1,0 +1,311 @@
+{
+    "modules": {
+        "tag": {
+            "get-all": {
+                "success": "Lấy danh sách tag thành công",
+                "error": "Lấy danh sách tag thất bại"
+            },
+            "get-detail": {
+                "success": "Lấy chi tiết tag thành công",
+                "error": "Lấy chi tiết tag thất bại"
+            },
+            "create": {
+                "success": "Tạo tag thành công",
+                "error": "Tạo tag thất bại"
+            },
+            "update": {
+                "success": "Cập nhật tag thành công",
+                "error": "Cập nhật tag thất bại"
+            },
+            "delete": {
+                "success": "Xóa tag thành công",
+                "error": "Xóa tag thất bại"
+            },
+            "exist": {
+                "found": "Tag đã tồn tại",
+                "not-found": "Tag không tồn tại"
+            },
+            "child-tag": {
+                "get-all": {
+                    "success": "Lấy danh sách tag con thành công",
+                    "error": "Lấy danh sách tag con thất bại"
+                },
+                "get-detail": {
+                    "success": "Lấy chi tiết tag con thành công",
+                    "error": "Lấy chi tiết tag con thất bại"
+                },
+                "create": {
+                    "success": "Tạo tag con thành công",
+                    "error": "Tạo tag con thất bại"
+                },
+                "update": {
+                    "success": "Cập nhật tag con thành công",
+                    "error": "Cập nhật tag con thất bại"
+                },
+                "delete": {
+                    "success": "Xóa tag con thành công",
+                    "error": "Xóa tag con thất bại"
+                },
+                "exist": {
+                    "found": "Tag con đã tồn tại",
+                    "not-found": "Tag con không tồn tại"
+                }
+            }
+        },
+        "auth": {
+            "register": {
+                "create": {
+                    "success": "Đăng ký tài khoản thành công",
+                    "error": "Đăng ký tài khoản thất bại",
+                    "email-exist": "Đăng ký thất bại, email đã tồn tại"
+                }
+            }
+        },
+        "mail": {
+            "send-register-email": {
+                "success": "Gửi email đăng ký thành công",
+                "error": "Gửi email đăng ký thất bại",
+                "exist": "Email đã tồn tại"
+            },
+            "send-reset-password-email": {
+                "success": "Gửi email đặt lại mật khẩu thành công",
+                "error": "Gửi email đặt lại mật khẩu thất bại"
+            }
+        },
+        "user": {
+            "create": {
+                "handle": {
+                    "success": "Tạo người dùng thành công",
+                    "error": "Tạo người dùng thất bại",
+                    "email-exist": "Email đã tồn tại"
+                }
+            },
+            "get-all": {
+                "success": "Lấy danh sách người dùng thành công",
+                "error": "Lấy danh sách người dùng thất bại",
+                "not-found": "Không tìm thấy người dùng"
+            },
+            "delete": {
+                "handle": {
+                    "success": "Xoá người dùng thành công",
+                    "error": "Xoá người dùng thất bại",
+                    "not-found": "Không tìm thấy người dùng"
+                }
+            },
+            "set-info": {
+                "success": "Cập nhật thông tin người dùng thành công",
+                "error": "Cập nhật thông tin người dùng thất bại"
+            },
+            "get": {
+                "list-friends": {
+                    "success": "Lấy danh sách bạn bè thành công",
+                    "error": "Lấy danh sách bạn bè thất bại",
+                    "not-found": "Không tìm thấy bạn bè"
+                },
+                "recommend-friends": {
+                    "success": "Lấy danh sách bạn bè gợi ý thành công",
+                    "error": "Lấy danh sách bạn bè gợi ý thất bại",
+                    "not-found": "Không tìm thấy bạn bè gợi ý"
+                }
+            },
+            "friend-requests": {
+                "create": {
+                    "send": {
+                        "success": "Gửi yêu cầu kết bạn thành công",
+                        "error": "Gửi yêu cầu kết bạn thất bại"
+                    }
+                },
+                "get": {
+                    "all": {
+                        "success": "Lấy tất cả yêu cầu kết bạn thành công",
+                        "error": "Lấy tất cả yêu cầu kết bạn thất bại"
+                    }
+                },
+                "update": {
+                    "feedback": {
+                        "success": "Phản hồi yêu cầu kết bạn thành công",
+                        "error": "Phản hồi yêu cầu kết bạn thất bại"
+                    },
+                    "cancel": {
+                        "success": "Hủy yêu cầu kết bạn thành công",
+                        "error": "Hủy yêu cầu kết bạn thất bại"
+                    }
+                }
+            }
+        },
+        "role": {
+            "get-all": {
+                "success": "Lấy danh sách vai trò thành công",
+                "error": "Lấy danh sách vai trò thất bại",
+                "not-found": "Không tìm thấy vai trò"
+            }
+        },
+        "post": {
+            "comments": {
+                "create": {
+                    "handle": {
+                        "success": "Tạo bình luận thành công",
+                        "error": "Tạo bình luận thất bại"
+                    }
+                },
+                "get": {
+                    "all": {
+                        "success": "Lấy tất cả bình luận thành công",
+                        "error": "Lấy tất cả bình luận thất bại",
+                        "not-found": "Không tìm thấy bình luận"
+                    },
+                    "reply": {
+                        "success": "Lấy tất cả bình luận trả lời thành công",
+                        "error": "Lấy tất cả bình luận trả lời thất bại",
+                        "not-found": "Không tìm thấy bình luận trả lời"
+                    }
+                },
+                "delete": {
+                    "handle": {
+                        "success": "Xóa bình luận thành công",
+                        "error": "Xóa bình luận thất bại"
+                    }
+                },
+                "update": {
+                    "reaction": {
+                        "success": "Cập nhật phản ứng bình luận thành công",
+                        "error": "Cập nhật phản ứng bình luận thất bại"
+                    },
+                    "content": {
+                        "success": "Cập nhật nội dung bình luận thành công",
+                        "error": "Cập nhật nội dung bình luận thất bại"
+                    }
+                }
+            },
+            "update": {
+                "reaction": {
+                    "success": "Cập nhật phản ứng thành công",
+                    "error": "Cập nhật phản ứng thất bại"
+                },
+                "shared": {
+                    "success": "Cập nhật chia sẻ bài viết thành công",
+                    "error": "Cập nhật chia sẻ bài viết thất bại"
+                }
+            },
+            "get": {
+                "by-author": {
+                    "success": "Lấy tất cả bài viết của tác giả thành công",
+                    "error": "Lấy tất cả bài viết của tác giả thất bại",
+                    "not-found": "Không tìm thấy bài viết của tác giả"
+                }
+            }
+        },
+        "s3": {
+            "upload-limit-exceeded": "Bạn đã vượt quá giới hạn dung lượng cho phép",
+            "only-accept-image": "Chỉ cho phép tải lên hình ảnh",
+            "only-accept-video": "Chỉ cho phép tải lên video"
+        },
+        "chat": {
+            "group-conversations": {
+                "create": {
+                    "handle": {
+                        "success": "Xử lý cuộc trò chuyện nhóm thành công",
+                        "error": "Xử lý cuộc trò chuyện nhóm thất bại"
+                    }
+                },
+                "get-all": {
+                    "success": "Lấy danh sách cuộc trò chuyện nhóm thành công",
+                    "error": "Lấy danh sách cuộc trò chuyện nhóm thất bại"
+                },
+                "update": {
+                    "join": {
+                        "success": "Tham gia cuộc trò chuyện nhóm thành công",
+                        "error": "Tham gia cuộc trò chuyện nhóm thất bại"
+                    },
+                    "read-new-messages": {
+                        "success": "Đánh dấu tin nhắn mới đã đọc thành công",
+                        "error": "Đánh dấu tin nhắn mới đã đọc thất bại"
+                    },
+                    "leave": {
+                        "success": "Rời khỏi cuộc trò chuyện nhóm thành công",
+                        "error": "Rời khỏi cuộc trò chuyện nhóm thất bại"
+                    },
+                    "permissions": {
+                        "success": "Cập nhật quyền người dùng trong nhóm thành công",
+                        "error": "Cập nhật quyền người dùng trong nhóm thất bại"
+                    },
+                    "info": {
+                        "success": "Cập nhật thông tin nhóm thành công",
+                        "error": "Cập nhật thông tin nhóm thất bại"
+                    }
+                },
+                "get-by-id": {
+                    "success": "Lấy thông tin cuộc trò chuyện nhóm thành công",
+                    "error": "Lấy thông tin cuộc trò chuyện nhóm thất bại"
+                },
+                "get": {
+                    "all": {
+                        "success": "Lấy tất cả cuộc nhóm chat thành công",
+                        "error": "Lấy tất cả cuộc nhóm chat thất bại"
+                    },
+                    "detail": {
+                        "success": "Lấy chi tiết cuộc trò chuyện nhóm thành công",
+                        "error": "Lấy chi tiết cuộc trò chuyện nhóm thất bại"
+                    }
+                }
+            },
+            "group-messages": {
+                "send": {
+                    "success": "Gửi tin nhắn nhóm thành công",
+                    "error": "Gửi tin nhắn nhóm thất bại"
+                },
+                "get-all": {
+                    "success": "Lấy danh sách tin nhắn nhóm thành công",
+                    "error": "Lấy danh sách tin nhắn nhóm thất bại"
+                },
+                "read-by-user": {
+                    "success": "Đánh dấu tin nhắn đã đọc thành công",
+                    "error": "Đánh dấu tin nhắn đã đọc thất bại"
+                },
+                "delete": {
+                    "success": "Xóa tin nhắn nhóm thành công",
+                    "error": "Xóa tin nhắn nhóm thất bại"
+                }
+            },
+            "group-join-requests": {
+                "create": {
+                    "join": {
+                        "success": "Gửi yêu cầu tham gia nhóm thành công",
+                        "error": "Gửi yêu cầu tham gia nhóm thất bại"
+                    }
+                },
+                "update": {
+                    "feedback": {
+                        "success": "Phản hồi yêu cầu tham gia nhóm thành công",
+                        "error": "Phản hồi yêu cầu tham gia nhóm thất bại"
+                    }
+                },
+                "get": {
+                    "all": {
+                        "success": "Lấy tất cả yêu cầu tham gia nhóm thành công",
+                        "error": "Lấy tất cả yêu cầu tham gia nhóm thất bại"
+                    }
+                }
+            }
+        }
+    },
+    "validation": {
+        "missing-parameter": "Thiếu các tham số %s",
+        "invalid-parameter": "Tham số %s không hợp lệ"
+    },
+    "server": {
+        "error": "Đã xảy ra lỗi. Vui lòng thử lại sau.",
+        "unauthorized": "Quyền truy cập bị từ chối",
+        "forbidden": "Không có quyền truy cập tài nguyên",
+        "not-found": "Không tìm thấy tài nguyên",
+        "bad-request": "Yêu cầu không hợp lệ",
+        "internal-server-error": "Lỗi máy chủ nội bộ",
+        "service-unavailable": "Dịch vụ không khả dụng",
+        "gateway-timeout": "Thời gian chờ cổng đã hết",
+        "unsupported-media-type": "Loại phương tiện không được hỗ trợ",
+        "unprocessable-entity": "Thực thể không thể xử lý",
+        "method-not-allowed": "Phương thức không được phép",
+        "precondition-failed": "Điều kiện trước đó không thành công",
+        "request-timeout": "Thời gian yêu cầu đã hết"
+    }
+}

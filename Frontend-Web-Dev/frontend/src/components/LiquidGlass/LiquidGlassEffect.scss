@@ -1,0 +1,120 @@
+/* Container chính chứa cả nền và lớp kính */
+.liquid-glass-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Điều chỉnh chiều cao theo ý muốn */
+  overflow: hidden; /* Đảm bảo không bị tràn ra ngoài */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0; /* Nền của container */
+}
+
+/* Các hình ảnh phía dưới, sẽ bị biến dạng */
+.background-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  z-index: 0; /* Đảm bảo nó nằm dưới lớp kính */
+}
+
+.background-images img {
+  width: 250px; /* Kích thước ảnh */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Lớp bọc cho hiệu ứng kính để kiểm soát vị trí */
+.glass-overlay-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Căn giữa */
+  z-index: 1; /* Đảm bảo nằm trên hình ảnh nền */
+  width: 80%; /* Chiều rộng của vùng kính */
+  max-width: 600px; /* Giới hạn chiều rộng */
+  height: 350px; /* Chiều cao của vùng kính */
+  pointer-events: auto; /* Cho phép các sự kiện chuột trên lớp kính */
+}
+
+/* CSS bạn đã cung cấp cho lớp kính */
+.glass {
+  position: relative; /* Đổi từ sticky thành relative hoặc absolute tùy cấu trúc */
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px) saturate(180%);
+  border-radius: 2rem; /* Thêm border-radius nếu muốn */
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2),
+    inset 0 4px 20px rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden; /* Quan trọng để hiệu ứng filter không bị tràn ra ngoài border-radius */
+}
+
+.glass::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem; /* Cần khớp với .glass nếu muốn */
+  backdrop-filter: blur(1px);
+  box-shadow: inset -10px -8px 0px -11px rgba(255, 255, 255, 1),
+    inset 0px -9px 0px -8px rgba(255, 255, 255, 1);
+  opacity: 0.6;
+  z-index: -1; /* Đặt dưới nội dung của .glass */
+  filter: blur(1px) drop-shadow(10px 4px 6px black) brightness(115%);
+  pointer-events: none; /* Không chặn các sự kiện chuột */
+}
+
+.overlay-text {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.btn-glass {
+  position: relative;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.btn-glass::after {
+  border-radius: 0.75rem;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Ẩn SVG filters (chúng ta chỉ cần định nghĩa chúng) */
+.svg-filters {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  opacity: 0;
+}

@@ -1,0 +1,134 @@
+{
+  "header": [
+    {
+      "title": "🌍 Khám phá",
+      "value": "/kham-pha"
+    },
+    {
+      "title": "✨ Công Nghệ Mới",
+      "value": "/cong-nghe-moi"
+    },
+    {
+      "title": "📅 Sự Kiện",
+      "value": "/su-kien"
+    },
+    {
+      "title": "🏆 Cuộc thi",
+      "value": "/cuoc-thi"
+    },
+    {
+      "title": "🤔 Giải đáp thắc mắc",
+      "value": "/giai-dap-thac-mac"
+    },
+    {
+      "title": "📖 Học Tập và Tài Nguyên",
+      "value": "/hoc-tap-va-tai-nguyen"
+    },
+    {
+      "title": "🔒 Bảo Mật Thông Tin",
+      "value": "/bao-mat-thong-tin"
+    },
+    {
+      "title": "🚀 Chia Sẻ Dự Án",
+      "value": "/chia-se-du-an"
+    },
+    {
+      "title": "🤖 AI",
+      "value": "/ai"
+    },
+    {
+      "title": "🎓 Giáo dục",
+      "value": "/giao-duc"
+    },
+    {
+      "title": "💡 Ý tưởng",
+      "value": "/y-tuong"
+    },
+    {
+      "title": "📊 Phân tích",
+      "value": "/phan-tich"
+    }
+  ],
+  "select_header": [
+    "/kham-pha",
+    "/cong-nghe-moi",
+    "/su-kien",
+    "/cuoc-thi",
+    "/giai-dap-thac-mac",
+    "/hoc-tap-va-tai-nguyen",
+    "/bao-mat-thong-tin",
+    "/chia-se-du-an",
+    "/ai",
+    "/giao-duc",
+    "/y-tuong",
+    "/phan-tich"
+  ],
+  "content": [
+    {
+      "title": "🤔 Giải đáp thắc mắc",
+      "value": "giai-dap-thac-mac"
+    },
+    {
+      "title": "📖 Học Tập và Tài Nguyên",
+      "value": "hoc-tap-va-tai-nguyen"
+    },
+    {
+      "title": "🔒 Bảo Mật Thông Tin",
+      "value": "bao-mat-thong-tin"
+    },
+    {
+      "title": "🚀 Chia Sẻ Dự Án",
+      "value": "chia-se-du-an"
+    },
+    {
+      "title": "🌍 Khám phá",
+      "value": "kham-pha"
+    },
+    {
+      "title": "✨ Công Nghệ Mới",
+      "value": "cong-nghe-moi"
+    },
+    {
+      "title": "📅 Sự Kiện",
+      "value": "su-kien"
+    },
+    {
+      "title": "🏆 Cuộc thi",
+      "value": "cuoc-thi"
+    },
+    {
+      "title": "🤖 AI",
+      "value": "ai"
+    },
+    {
+      "title": "🎓 Giáo dục",
+      "value": "giao-duc"
+    },
+    {
+      "title": "💡 Ý tưởng",
+      "value": "y-tuong"
+    },
+    {
+      "title": "📊 Phân tích",
+      "value": "phan-tich"
+    }
+  ],
+  "select_content": [
+    "giai-dap-thac-mac",
+    "hoc-tap-va-tai-nguyen",
+    "bao-mat-thong-tin",
+    "chia-se-du-an",
+    "kham-pha",
+    "cong-nghe-moi",
+    "su-kien",
+    "cuoc-thi",
+    "ai",
+    "giao-duc",
+    "y-tuong",
+    "phan-tich"
+  ],
+  "logo": "https://files.vnews247.com/image/minwandev-1744466730756.png",
+  "footer": {
+    "content": "<h3>LIÊN HỆ&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KHÁC&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3><p><a href=\"https://vnews247.com/gioi-thieu\">Giới thiệu</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=\"https://vnews247.com/tong-hop\">Tổng hợp</a>​</p><p><a href=\"https://vnews247.com/dieu-khoan-su-dung\">Điều khoản sử dụng</a></p><p><a href=\"https://vnews247.com/chinh-sach-bao-mat\">Chính sách bảo mật</a></p><p><a href=\"https://vnews247.com/quang-cao\">Quảng cáo</a></p><p><a href=\"https://vnews247.com/quang-cao\"></a>Giấy phép thiết lập trang thông tin điện tử tổng hợp số 2313/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 05/05/2020</p><p>Đơn vị thiết lập: * Chịu trách nhiệm quản lý nội dung: Nguyễn Khánh Duy&nbsp; &nbsp;&nbsp;</p><p>Địa chỉ:318-320 Nguyễn Oanh, Phường 17, Quận Gò Vấp, TP.Hồ Chí Minh</p><p>Điện thoại: (024) 2-321-5211 Email: contact@vnews247.com</p><p>Vnews247 tổng hợp và sắp xếp các thông tin tự động</p>"
+  }
+}

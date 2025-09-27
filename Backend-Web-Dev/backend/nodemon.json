@@ -1,0 +1,6 @@
+{
+  "watch": ["src",".env.local"],
+  "ext": ".ts,.js,.json",
+  "ignore": [],
+  "exec": "npx ts-node --transpile-only -r ./env.local.js ./src/app.ts"
+}

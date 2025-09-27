@@ -1,0 +1,26 @@
+
+services:
+  nextjs:
+    # build: 
+    #   context: ./frontend
+    #   dockerfile: Dockerfile
+    image: quan586/web-dev:1.0.0
+    container_name: nextjs_container
+    restart: unless-stopped
+    ports:
+      - 8888:8888
+    expose:
+      - 8888
+    networks:
+      - web-network
+
+networks:
+  web-network:
+    external: true
+
+# docker compose down
+# docker compose up -d
+# docker compose up -d --build
+# docker compose logs -f
+
+# docker logs -f nextjs_container (check log realtime)

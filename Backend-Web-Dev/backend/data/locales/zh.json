@@ -1,0 +1,84 @@
+{
+    "modules": {
+        "tag": {
+            "get-all": {
+                "success": "获取标签列表成功",
+                "error": "获取标签列表失败"
+            },
+            "get-detail": {
+                "success": "获取标签详情成功",
+                "error": "获取标签详情失败"
+            },
+            "create": {
+                "success": "创建标签成功",
+                "error": "创建标签失败"
+            },
+            "update": {
+                "success": "更新标签成功",
+                "error": "更新标签失败"
+            },
+            "delete": {
+                "success": "删除标签成功",
+                "error": "删除标签失败"
+            },
+            "exist": {
+                "found": "标签已存在",
+                "not-found": "标签不存在"
+            },
+            "child-tag": {
+                "get-all": {
+                    "success": "获取子标签列表成功",
+                    "error": "获取子标签列表失败"
+                },
+                "get-detail": {
+                    "success": "获取子标签详情成功",
+                    "error": "获取子标签详情失败"
+                },
+                "create": {
+                    "success": "创建子标签成功",
+                    "error": "创建子标签失败"
+                },
+                "update": {
+                    "success": "更新子标签成功",
+                    "error": "更新子标签失败"
+                },
+                "delete": {
+                    "success": "删除子标签成功",
+                    "error": "删除子标签失败"
+                },
+                "exist": {
+                    "found": "子标签已存在",
+                    "not-found": "子标签不存在"
+                }
+            }
+        },
+        "auth": {},
+        "mail": {},
+        "user": {},
+        "role": {},
+        "post": {},
+        "s3": {
+            "upload-limit-exceeded": "您已超出允许的容量限制",
+            "only-accept-image": "只允许上传图片",
+            "only-accept-video": "只允许上传视频"
+        }
+    },
+    "validation": {
+        "missing-parameter": "缺少参数 %s"
+    },
+    "server": {
+        "error": "服务器错误",
+        "unauthorized": "访问被拒绝",
+        "forbidden": "没有访问资源的权限",
+        "not-found": "未找到资源",
+        "bad-request": "无效的请求",
+        "internal-server-error": "内部服务器错误",
+        "service-unavailable": "服务不可用",
+        "gateway-timeout": "网关超时",
+        "unsupported-media-type": "不支持的媒体类型",
+        "unprocessable-entity": "无法处理的实体",
+        "method-not-allowed": "方法不被允许",
+        "precondition-failed": "前置条件失败",
+        "request-timeout": "请求超时"
+    }
+}

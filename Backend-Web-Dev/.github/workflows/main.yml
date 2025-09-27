@@ -1,0 +1,44 @@
+name: Node Deployment
+
+on:
+  push:
+    branches: [production]
+    # tags:
+    #   - "v*"
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: 22
+        script: |
+          cd /root/web-dev/Backend-Web-Dev
+          git fetch origin
+          git checkout production
+          git pull
+          docker compose down || true
+          docker compose up -d --build
+
+
+
+
+# which docker
+#/usr/bin/docker
+#root@vpssieutoc:/usr/local/bin# sudo ln -s /usr/bin/docker /usr/local/bin/docker
+#root@vpssieutoc:/usr/local/bin# ls
+#docker
+
+        # script: |
+        #   cd /root/web/Backend-Web-Dev
+        #   git fetch origin
+        #   git checkout production
+        #   git pull
+        #   docker compose down || true
+        #   docker compose up -d --build

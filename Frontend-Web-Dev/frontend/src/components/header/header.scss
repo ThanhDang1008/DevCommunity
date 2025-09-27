@@ -1,0 +1,442 @@
+// .site-header {
+//   .header {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+
+//     .header-top {
+//       display: flex;
+//       justify-content: center;
+//       background: radial-gradient(circle, #a58de3 11%, #3e3c64 89%);
+//       border-radius: 10px;
+//       margin-bottom: 10px;
+//       margin-top: 10px;
+//       .container {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 6px 0 1px 0;
+//         width: 68%;
+//         .search-container {
+//           position: relative;
+//           display: inline-block;
+//           .search-input {
+//             padding: 8px 20px 8px 40px;
+//             width: 250px;
+//             border: none;
+//             border-radius: 25px;
+//             background: #f1f1f1;
+//             font-size: 16px;
+//             transition: all 0.3s ease;
+//             outline: none;
+//             &:focus {
+//               width: 280px;
+//               background: #ffffff;
+//               box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+//             }
+//           }
+//           .search-button {
+//             position: absolute;
+//             left: 10px;
+//             top: 50%;
+//             transform: translateY(-50%);
+//             border: none;
+//             background: none;
+//             cursor: pointer;
+//             padding: 5px;
+//             .search-icon {
+//               width: 20px;
+//               height: 20px;
+//               fill: #666;
+//               transition: fill 0.3s ease;
+//             }
+//             &:hover {
+//               .search-icon {
+//                 fill: #007bff;
+//               }
+//             }
+//           }
+
+//           &:hover .search-input {
+//             background: #ffffff;
+//           }
+//         }
+//       }
+//     }
+
+//     .header-bottom {
+//       $bg-color: #2e1949cf;
+//       $bg-border-color: rgba(255, 255, 255, 0);
+//       background-color: $bg-color;
+//       box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+//       //backdrop-filter: blur(5px);
+
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       width: 85%;
+//       border-radius: 5px;
+//       .nav-toggle {
+//         display: none;
+//         .nav-toggle-bar {
+//           font-size: 1rem;
+//           color: white;
+//           padding: 12px 15px;
+//           cursor: pointer;
+//           &:hover {
+//             background-color: rgba(255, 255, 255, 0.1);
+//             cursor: pointer;
+//           }
+//         }
+//       }
+//       .header-content {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         .nav-list {
+//           display: flex;
+//           flex-wrap: wrap;
+//           gap: 10px;
+//           justify-content: start;
+//           .nav-item {
+//             color: white;
+//             text-decoration: none;
+//             font-size: 1rem;
+//             font-weight: 550;
+//             position: relative;
+//             border: 3px solid $bg-border-color;
+//             a {
+//               display: block;
+//               padding: 12px 15px;
+//             }
+//             &:hover {
+//               border-top: 3px solid rgb(255, 255, 255);
+//               background-color: rgba(255, 255, 255, 0.1);
+//               cursor: pointer;
+//             }
+//             .sub-menu {
+//               position: absolute;
+//               display: none;
+//               top: 100%;
+//               left: 0;
+//               z-index: 49;
+//               list-style: none;
+//               width: 200px;
+//               margin: 0;
+//               padding: 0;
+//               border: 3px solid #ffffff49;
+//               border-radius: 5px;
+//               background-color: #140b34;
+//               box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+//               &:hover {
+//                 display: block;
+//               }
+//               .sub-menu-item {
+//                 color: white;
+//                 text-decoration: none;
+//                 font-size: 1rem;
+//                 font-weight: 550;
+//                 position: relative;
+//                 a {
+//                   display: block;
+//                   padding: 10px 15px;
+//                 }
+//                 &:hover {
+//                   border-left: 3px solid #ffffff;
+//                   background-color: rgba(255, 255, 255, 0.1);
+//                   cursor: pointer;
+//                 }
+//                 .sub-sub-menu {
+//                   position: absolute;
+//                   display: none;
+//                   background-color: #140b34;
+//                   border: 3px solid #ffffff49;
+//                   top: 0;
+//                   right: 100%;
+//                   z-index: 1;
+//                   list-style: none;
+//                   width: 200px;
+//                   margin: 0;
+//                   padding: 0;
+//                   border-radius: 5px;
+//                   &:hover {
+//                     display: block;
+//                   }
+//                   .sub-sub-menu-item {
+//                     color: white;
+//                     text-decoration: none;
+//                     font-size: 1rem;
+//                     font-weight: 550;
+//                     a {
+//                       display: block;
+//                       padding: 10px 15px;
+//                     }
+//                     &:hover {
+//                       background-color: rgba(255, 255, 255, 0.1);
+//                       cursor: pointer;
+//                     }
+//                   }
+//                 }
+//                 &:hover .sub-sub-menu {
+//                   display: block;
+//                 }
+//               }
+//             }
+//             &:hover .sub-menu {
+//               display: block;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .is-sticky {
+//     position: fixed;
+//     width: 100%;
+//     z-index: 49;
+//     top: 10;
+//   }
+//   @media screen and (max-width: 1200px) {
+//     .header {
+//       .header-top {
+//         .container {
+//           width: 90%;
+//         }
+//       }
+//     }
+//   }
+//   @media screen and (max-width: 992px) {
+//     .header {
+//       .header-top {
+//         .container {
+//           width: 90%;
+//         }
+//       }
+//       .header-bottom {
+//         .header-content {
+//           .nav-list {
+//             //canh giữa
+//           }
+//         }
+//       }
+//     }
+//   }
+//   @media screen and (max-width: 768px) {
+//     .header {
+//       .header-top {
+//         .container {
+//           width: 90%;
+//           justify-content: center;
+//           .search-container {
+//             display: none;
+//           }
+//         }
+//       }
+//       .header-bottom {
+//         justify-content: start;
+//         width: 98%;
+//         top: 15;
+
+//         //---------- Chuyển header xuống dưới (mobile) -----------
+//         // bottom: 0.5%;
+//         // top: 94%;
+//         //----------------------
+//         .nav-toggle {
+//           display: flex;
+//           justify-content: space-around;
+//           align-items: center;
+//           width: 100%;
+//         }
+//         .header-content {
+//           display: none;
+//           .nav-list {
+//             display: none;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   @media screen and (max-width: 576px) {
+//     .header {
+//       .header-top {
+//         .container {
+//           width: 95%;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .site-header-drawer {
+//   //css cho thanh scroll
+//   ::-webkit-scrollbar {
+//     width: 7px; /* Chiều rộng của thanh cuộn dọc */
+//     height: 12px; /* Chiều cao của thanh cuộn ngang */
+//   }
+
+//   ::-webkit-scrollbar-track {
+//     background: #020919; /* Màu nền của track */
+//   }
+
+//   ::-webkit-scrollbar-thumb {
+//     background: #545da5; /* Màu của thanh cuộn */
+//     border-radius: 6px; /* Bo tròn góc của thanh cuộn */
+//     &:hover {
+//       background: #555; /* Màu của thanh cuộn khi hover */
+//     }
+//   }
+//   .ant-drawer-header {
+//     background-color: rgba(22, 7, 60, 0.95);
+//     border-bottom: 1px solid rgba(150, 150, 255, 0.1);
+//     color: #e0e0ff;
+//   }
+//   .ant-drawer-body {
+//     background-color: rgba(15, 7, 40, 0.97);
+//     color: #e0e0ff;
+
+//     .drawer-footer {
+//       display: flex;
+//       justify-content: end;
+//       align-items: end;
+
+//       .close-button {
+//         background-color: rgba(120, 90, 190, 0.3);
+//         color: #e0e0ff;
+//         border: 1px solid rgba(150, 150, 255, 0.2);
+//         padding: 10px 20px;
+//         font-size: 16px;
+//         border-radius: 5px;
+//         cursor: pointer;
+//         transition: all 0.3s ease;
+//         width: 100%;
+//       }
+
+//       .close-button:hover {
+//         background-color: rgba(150, 120, 220, 0.4);
+//         border-color: rgba(180, 180, 255, 0.4);
+//       }
+//     }
+
+//     .ant-collapse {
+//       background-color: rgba(30, 10, 70, 0.8);
+//       margin-bottom: 10px;
+//       border: 1px solid rgba(150, 150, 255, 0.15);
+
+//       .ant-collapse-header {
+//         padding: 0px 5px 0px 0px;
+//         display: flex;
+//         flex-direction: row-reverse;
+//         justify-content: space-between;
+//         align-items: center;
+//         border-radius: 5px !important;
+//         background-color: rgba(40, 15, 90, 0.8);
+//         .ant-collapse-header-text {
+//           margin-right: 10px;
+//         }
+//         &:hover {
+//           background-color: rgba(70, 30, 150, 0.8);
+//         }
+//       }
+
+//       .title-header-drawer {
+//         display: flex;
+//         font-size: 16px;
+//         color: #e0e0ff;
+//         padding: 10px 20px;
+//         cursor: pointer;
+//         transition: all 0.3s ease;
+//         border-radius: 5px;
+//         background-color: rgba(40, 15, 90, 0.8);
+
+//         &:hover {
+//           background-color: rgba(70, 30, 150, 0.8);
+//         }
+//       }
+
+//       .ant-collapse-content {
+//         background-color: rgba(20, 8, 50, 0.8);
+
+//         .ant-collapse-content-box {
+//           .title-header-drawer-child {
+//             display: flex;
+//             font-size: 16px;
+//             color: #d0d0ff;
+//             padding: 10px 20px;
+//             cursor: pointer;
+//             transition: all 0.3s ease;
+//             background-color: rgba(35, 12, 80, 0.8);
+//             margin-top: 5px;
+//             border-radius: 5px;
+
+//             &:hover {
+//               background-color: rgba(70, 30, 150, 0.8);
+//             }
+//           }
+//         }
+//       }
+
+//       &:hover {
+//         background-color: rgba(35, 12, 80, 0.9);
+//       }
+//     }
+
+//     .search-container {
+//       position: relative;
+//       display: inline-block;
+//       width: 100%;
+//       margin-bottom: 15px;
+
+//       .search-input {
+//         padding: 8px 20px 8px 40px;
+//         width: 100%;
+//         border: 1px solid rgba(150, 150, 255, 0.2);
+//         border-radius: 25px;
+//         background: rgba(30, 10, 70, 0.6);
+//         color: #e0e0ff;
+//         font-size: 16px;
+//         transition: all 0.3s ease;
+//         outline: none;
+
+//         &:focus {
+//           background: rgba(40, 15, 90, 0.8);
+//           box-shadow: 0 0 10px rgba(120, 90, 220, 0.4);
+//           border-color: rgba(150, 150, 255, 0.4);
+//         }
+
+//         &::placeholder {
+//           color: rgba(200, 200, 255, 0.6);
+//         }
+//       }
+
+//       .search-button {
+//         position: absolute;
+//         left: 10px;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         border: none;
+//         background: none;
+//         cursor: pointer;
+//         padding: 5px;
+
+//         .search-icon {
+//           width: 20px;
+//           height: 20px;
+//           fill: rgba(200, 200, 255, 0.7);
+//           transition: fill 0.3s ease;
+//         }
+
+//         &:hover {
+//           .search-icon {
+//             fill: #a0a0ff;
+//           }
+//         }
+//       }
+
+//       &:hover .search-input {
+//         background: rgba(40, 15, 90, 0.7);
+//       }
+//     }
+//   }
+// }

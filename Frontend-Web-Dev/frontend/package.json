@@ -1,0 +1,56 @@
+{
+  "name": "WEB-DEV",
+  "description": "Website for the Web Development course",
+  "version": "1.0.0",
+  "private": true,
+  "node": "20.19.2",
+  "engines": {
+    "node": "20.19.2"
+  },
+  "scripts": {
+    "dev": "next dev --turbopack -p 8888",
+    "build": "next build",
+    "start": "next start -p 8888",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/nextjs-registry": "^1.0.2",
+    "@tanstack/react-query": "^5.66.3",
+    "@tanstack/react-query-devtools": "^5.66.3",
+    "antd": "^5.24.3",
+    "axios": "^1.7.9",
+    "bootstrap-icons": "^1.11.3",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.9",
+    "highlight.js": "^11.11.1",
+    "hls.js": "^1.6.7",
+    "html-react-parser": "^5.2.2",
+    "jsonwebtoken": "^9.0.2",
+    "katex": "^0.16.21",
+    "lucide-react": "^0.476.0",
+    "next": "^15.2.5",
+    "next-auth": "^4.24.11",
+    "next-themes": "^0.4.6",
+    "parser": "^0.1.4",
+    "query-string": "^9.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.1",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "sass": "^1.85.0",
+    "slugify": "^1.6.6",
+    "socket.io-client": "^4.8.1",
+    "suneditor-react": "^3.6.1"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

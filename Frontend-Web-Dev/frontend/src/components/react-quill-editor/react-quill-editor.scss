@@ -1,0 +1,69 @@
+// .react-quill-editor {
+//   .quill {
+//     .ql-toolbar {
+//       button {
+//         margin-left: 2px;
+//         &:hover {
+//           background-color: rgb(223, 220, 220);
+//           border-radius: 5px;
+//         }
+//       }
+//       .ql-picker-label {
+//         &:hover {
+//           background-color: rgb(223, 220, 220);
+//           border-radius: 5px;
+//         }
+//       }
+//       .ql-picker {
+//         margin-left: 2px;
+//       }
+//       .ql-active {
+//         color: #000;
+//         background-color: #fff;
+//         border-radius: 5px;
+//       }
+//       border: 1px solid #1a1818;
+//       background-color: #9b9797;
+//       .ql-formats {
+//         .ql-customButton::before {
+//           //background: red;
+//           content: "🔒";
+//           font-size: 14px;
+//         }
+//       }
+//     }
+//     .ql-container {
+//       .ql-editor {
+//         min-height: 50vh;
+//         max-height: 80vh;
+//         overflow-y: auto;
+//         scrollbar-width: thin;
+//         scrollbar-color: #efefef #9b9797;
+
+//         padding: 10px;
+//         border: 1px solid #1a1818;
+//         border-top: none;
+//         border-bottom-left-radius: 5px;
+//         border-bottom-right-radius: 5px;
+//         background-color: #fff;
+//         color: #000;
+
+//         line-height: 165%;
+//         font-weight: 400;
+
+//         h1 {
+//           font-size: 2em;
+//           line-height: 1.4em;
+//         }
+//         h2 {
+//           font-size: 1.5em;
+//           line-height: 1.4em;
+//         }
+//         .ql-size-huge {
+//           font-size: 2.5em;
+//           line-height: 1.4em;
+//         }
+//       }
+//     }
+//   }
+// }
